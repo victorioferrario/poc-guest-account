@@ -23,6 +23,11 @@
       "tags": [
         "team:guest-account"
       ]
+    },
+    "folio": {
+      "tags": [
+        "team:guest-account"
+      ]
     }
   }
 }

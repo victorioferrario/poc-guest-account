@@ -23,6 +23,9 @@
       ],
       "@rccl/guest-account": [
         "libs/guest-account/src/index.ts"
+      ],
+      "@rccl/folio": [
+        "libs/folio/src/index.ts"
       ]
     }
   },

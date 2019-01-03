@@ -4,14 +4,16 @@ import { RouterModule } from '@angular/router';
 
 import { PastCruisesComponent } from './components/past-cruises/past-cruises.component';
 
+import { FolioModule } from '@rccl/folio';
+
 @NgModule({
   declarations: [PastCruisesComponent],
   imports: [
     CommonModule,
-
+    FolioModule,
     RouterModule.forChild([
       { path: 'past-cruises', component: PastCruisesComponent },
-      { path: '', redirectTo: 'past-cruises' }
+      { path: '', redirectTo: 'past-cruises' },
     ])
   ]
 })
