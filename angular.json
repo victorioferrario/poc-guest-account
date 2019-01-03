@@ -164,6 +164,46 @@
           "styleext": "scss"
         }
       }
+    },
+    "guest-account": {
+      "root": "libs/guest-account",
+      "sourceRoot": "libs/guest-account/src",
+      "projectType": "library",
+      "prefix": "rccl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/guest-account/tsconfig.lib.json",
+            "project": "libs/guest-account/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/guest-account/tsconfig.lib.json",
+              "libs/guest-account/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/guest-account/jest.config.js",
+            "tsConfig": "libs/guest-account/tsconfig.spec.json",
+            "setupFile": "libs/guest-account/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

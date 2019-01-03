@@ -12,7 +12,9 @@ import { LoggingModule } from '@rccl/logging';
     BrowserModule,
     NxModule.forRoot(),
     LoggingModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    RouterModule.forRoot([
+      { path: 'guest-account', loadChildren: '@rccl/guest-account#GuestAccountModule' }
+    ], { initialNavigation: 'enabled' })
   ],
   providers: [],
   bootstrap: [AppComponent]

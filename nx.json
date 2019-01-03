@@ -18,6 +18,11 @@
       "tags": [
         "shared"
       ]
+    },
+    "guest-account": {
+      "tags": [
+        "team:guest-account"
+      ]
     }
   }
 }
