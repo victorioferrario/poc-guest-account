@@ -26,7 +26,9 @@
               "apps/excalibur/src/favicon.ico",
               "apps/excalibur/src/assets"
             ],
-            "styles": ["apps/excalibur/src/styles.scss"],
+            "styles": [
+              "apps/excalibur/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -80,7 +82,9 @@
               "apps/excalibur/tsconfig.app.json",
               "apps/excalibur/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -114,8 +118,50 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/excalibur-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
+        }
+      }
+    },
+    "logging": {
+      "root": "libs/logging",
+      "sourceRoot": "libs/logging/src",
+      "projectType": "library",
+      "prefix": "rccl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/logging/tsconfig.lib.json",
+            "project": "libs/logging/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/logging/tsconfig.lib.json",
+              "libs/logging/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/logging/jest.config.js",
+            "tsConfig": "libs/logging/tsconfig.spec.json",
+            "setupFile": "libs/logging/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
         }
       }
     }

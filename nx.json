@@ -13,6 +13,11 @@
     },
     "excalibur-e2e": {
       "tags": []
+    },
+    "logging": {
+      "tags": [
+        "shared"
+      ]
     }
   }
 }
