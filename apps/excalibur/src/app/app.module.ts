@@ -13,7 +13,8 @@ import { LoggingModule } from '@rccl/logging';
     NxModule.forRoot(),
     LoggingModule,
     RouterModule.forRoot([
-      { path: 'guest-account', loadChildren: '@rccl/guest-account#GuestAccountModule' }
+      { path: 'past-cruises', loadChildren: '@rccl/guest-account#GuestAccountModule' },
+      { path: 'upcoming-cruises', loadChildren: '@rccl/cruise-bookings#CruiseBookingsModule' }
     ], { initialNavigation: 'enabled' })
   ],
   providers: [],

@@ -26,6 +26,9 @@
       ],
       "@rccl/folio": [
         "libs/folio/src/index.ts"
+      ],
+      "@rccl/cruise-bookings": [
+        "libs/cruise-bookings/src/index.ts"
       ]
     }
   },

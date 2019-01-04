@@ -12,8 +12,7 @@ import { FolioModule } from '@rccl/folio';
     CommonModule,
     FolioModule,
     RouterModule.forChild([
-      { path: 'past-cruises', component: PastCruisesComponent },
-      { path: '', redirectTo: 'past-cruises' },
+      { path: '', component: PastCruisesComponent }
     ])
   ]
 })

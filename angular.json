@@ -244,6 +244,46 @@
           "styleext": "scss"
         }
       }
+    },
+    "cruise-bookings": {
+      "root": "libs/cruise-bookings",
+      "sourceRoot": "libs/cruise-bookings/src",
+      "projectType": "library",
+      "prefix": "rccl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/cruise-bookings/tsconfig.lib.json",
+            "project": "libs/cruise-bookings/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cruise-bookings/tsconfig.lib.json",
+              "libs/cruise-bookings/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/cruise-bookings/jest.config.js",
+            "tsConfig": "libs/cruise-bookings/tsconfig.spec.json",
+            "setupFile": "libs/cruise-bookings/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

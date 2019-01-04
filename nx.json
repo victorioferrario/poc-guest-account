@@ -28,6 +28,11 @@
       "tags": [
         "team:guest-account"
       ]
+    },
+    "cruise-bookings": {
+      "tags": [
+        "team:cruise-bookings"
+      ]
     }
   }
 }
