@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { CruiseBookingsModule } from '@rccl/cruise-bookings/src';
+import { CruiseBookingsModule } from '@rccl/cruise-bookings';
 
 @NgModule({
   imports: [

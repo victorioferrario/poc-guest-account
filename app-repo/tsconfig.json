@@ -11,14 +11,15 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
+    // NOTE: This is needed in case of linking source folder instead of dist folder,
+    // we should think about how to add dinamically linked packages
+    /*
     "paths": {
       "@rccl/logging": [
         "node_modules/@rccl/logging/src/index.ts"
       ],
-      "@rccl/folio": [
-        "node_modules/@rccl/folio/src/index.ts"
-      ],
     },
+    */
     "typeRoots": [
       "node_modules/@types"
     ],

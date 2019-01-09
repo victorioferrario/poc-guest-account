@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { Logger } from '@rccl/logging';
+import { Logger } from '@rccl/logging';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'integration-app';
 
-  /*
   constructor(private logger: Logger) {
     this.logger.log('AppComponent constructor');
   }
-  */
 }

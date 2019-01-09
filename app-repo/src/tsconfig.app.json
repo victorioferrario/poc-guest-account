@@ -7,6 +7,9 @@
   "include": [
     "**/*.ts",
 
+    // NOTE: This is needed if linking source code instead of build folder, in that case we need to find a way to add a regex
+    // to include files that are needed for linked packages
+    /*
     "../node_modules/@rccl/logging/src/index.ts",
     "../node_modules/@rccl/logging/src/lib/services/logger.service.ts",
     "../node_modules/@rccl/logging/src/lib/logging.module.ts",
@@ -22,6 +25,7 @@
     "../node_modules/@rccl/cruise-bookings/src/index.ts",
     "../node_modules/@rccl/cruise-bookings/src/lib/components/upcoming-cruises/upcoming-cruises.component.ts",
     "../node_modules/@rccl/cruise-bookings/src/lib/cruise-bookings.module.ts",
+    */
   ],
   "exclude": [
     "test.ts",
