@@ -8,30 +8,9 @@
     "nx.json": "*"
   },
   "projects": {
-    "excalibur": {
-      "tags": []
-    },
-    "excalibur-e2e": {
-      "tags": []
-    },
     "logging": {
       "tags": [
         "shared"
-      ]
-    },
-    "guest-account": {
-      "tags": [
-        "team:guest-account"
-      ]
-    },
-    "folio": {
-      "tags": [
-        "team:guest-account"
-      ]
-    },
-    "cruise-bookings": {
-      "tags": [
-        "team:cruise-bookings"
       ]
     }
   }
