@@ -6,6 +6,6 @@ import { Injectable } from '@angular/core';
 export class Logger {
 
   log(text: string): void {
-    console.log('test 2', text);
+    console.log('Log:', text);
   }
 }
