@@ -1,0 +1,16 @@
+storage: /verdaccio/storage
+auth:
+  htpasswd:
+    file: /verdaccio/auth/htpasswd
+    max_users: -1
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@rccl/*':
+    access: admin rccl
+    publish: admin rccl
+  '**':
+    proxy: npmjs
+logs:
+  - { type: stdout, format: pretty, level: http }

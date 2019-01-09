@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+
+  npm:
+    image: verdaccio/verdaccio
+    ports:
+      - 4873:4873
+    restart: always
+    volumes:
+      - ./npm-registry/conf:/verdaccio/conf
+      - ./auth:/verdaccio/auth
+      - ./npm-registry/storage:/verdaccio/storage
