@@ -1,0 +1,30 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": []
+  },
+  "include": [
+    "**/*.ts",
+
+    "../node_modules/@rccl/logging/src/index.ts",
+    "../node_modules/@rccl/logging/src/lib/services/logger.service.ts",
+    "../node_modules/@rccl/logging/src/lib/logging.module.ts",
+
+    "../node_modules/@rccl/guest-account/src/index.ts",
+    "../node_modules/@rccl/guest-account/src/lib/components/past-cruises/past-cruises.component.ts",
+    "../node_modules/@rccl/guest-account/src/lib/guest-account.module.ts",
+
+    "../node_modules/@rccl/folio/src/index.ts",
+    "../node_modules/@rccl/folio/src/lib/components/folio/folio.component.ts",
+    "../node_modules/@rccl/folio/src/lib/folio.module.ts",
+
+    "../node_modules/@rccl/cruise-bookings/src/index.ts",
+    "../node_modules/@rccl/cruise-bookings/src/lib/components/upcoming-cruises/upcoming-cruises.component.ts",
+    "../node_modules/@rccl/cruise-bookings/src/lib/cruise-bookings.module.ts",
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
